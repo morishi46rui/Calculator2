@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <h3>Calculator</h3>
+  <div id="calc">
+    <input id="result" value="0" type="text">
+    <table>
+      <tbody>
+        <tr>
+          <td><button type="button" onclick="num_click(this.innerHTML)">7</button></td>
+          <td><button type="button" onclick="num_click(this.innerHTML)">8</button></td>
+          <td><button type="button" onclick="num_click(this.innerHTML)">9</button></td>
+          <td><button type="button" onclick="ope_click(this.innerHTML)">+</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" onclick="num_click(this.innerHTML)">4</button></td>
+          <td><button type="button" onclick="num_click(this.innerHTML)">5</button></td>
+          <td><button type="button" onclick="num_click(this.innerHTML)">6</button></td>
+          <td><button type="button" onclick="ope_click(this.innerHTML)">-</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" onclick="num_click(this.innerHTML)">1</button></td>
+          <td><button type="button" onclick="num_click(this.innerHTML)">2</button></td>
+          <td><button type="button" onclick="num_click(this.innerHTML)">3</button></td>
+          <td><button type="button" onclick="ope_click(this.innerHTML)">×</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" onclick="num_click(this.innerHTML)">0</button></td>
+          <td><button type="button" onclick="num_click(this.innerHTML)">00</button></td>
+          <td><button type="button" onclick="num_click(this.innerHTML)">.</button></td>
+          <td><button type="button" onclick="ope_click(this.innerHTML)">÷</button></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button type="button" onclick="reset()">AC</button></td>
+          <td colspan="2"><button type="button" onclick="equal_click()">=</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+<script src="main.js"></script>
+</body>
+</html>
